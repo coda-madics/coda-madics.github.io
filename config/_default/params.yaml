@@ -44,7 +44,7 @@ hugoblox:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    pack: "synthwave"                       # synthwave84 | dracula | nord | custom
     # Optional: Override theme pack colors
     colors:
       primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
@@ -233,7 +233,7 @@ hugoblox:
     pirsch:
       site_id: ""
     clarity:
-      project_id: ""
+      project_id: "vt9v07mmxg"
     baidu:
       site_id: ""
 

@@ -197,233 +197,93 @@
   
   
   
+    
+    
+    
+  
+
+  
+  --hb-primary-500-rgb: 217 70 239;
+  --color-primary-500: rgb(var(--hb-primary-500-rgb));
+
+  
+  
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-100: oklch(0.93 0.034 272.788);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-200: oklch(0.87 0.065 274.039);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-300: oklch(0.785 0.115 274.713);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-400: oklch(0.673 0.182 276.935);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-50: oklch(0.962 0.018 272.314);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-500: oklch(0.585 0.233 277.117);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-600: oklch(0.511 0.262 276.966);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-700: oklch(0.457 0.24 277.023);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-800: oklch(0.398 0.195 277.366);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-900: oklch(0.359 0.144 278.697);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-950: oklch(0.257 0.09 281.288);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
-    --hb-primary-500-rgb: 128 128 128; 
+    
+    --hb-primary-50-rgb: 253 245 254;
+    --color-primary-50: rgb(var(--hb-primary-50-rgb));
   
+    
+    
+    
+    
+    --hb-primary-100-rgb: 251 236 253;
+    --color-primary-100: rgb(var(--hb-primary-100-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-200-rgb: 247 218 251;
+    --color-primary-200: rgb(var(--hb-primary-200-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-300-rgb: 243 199 250;
+    --color-primary-300: rgb(var(--hb-primary-300-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-400-rgb: 239 181 248;
+    --color-primary-400: rgb(var(--hb-primary-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-primary-600-rgb: 195 63 215;
+    --color-primary-600: rgb(var(--hb-primary-600-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-700-rgb: 173 56 191;
+    --color-primary-700: rgb(var(--hb-primary-700-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-800-rgb: 141 45 155;
+    --color-primary-800: rgb(var(--hb-primary-800-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-900-rgb: 108 35 119;
+    --color-primary-900: rgb(var(--hb-primary-900-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-950-rgb: 65 21 71;
+    --color-primary-950: rgb(var(--hb-primary-950-rgb));
+  
+
 
 
 
@@ -437,232 +297,98 @@
   
   
   
+    
+    
+    
+  
+
+  
+  --hb-secondary-500-rgb: 6 182 212;
+  --color-secondary-500: rgb(var(--hb-secondary-500-rgb));
+
+  
+  
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-100: oklch(0.932 0.032 255.585);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-200: oklch(0.882 0.059 254.128);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-300: oklch(0.809 0.105 251.813);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-400: oklch(0.707 0.165 254.624);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-50: oklch(0.97 0.014 254.604);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-500: oklch(0.623 0.214 259.815);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-600: oklch(0.546 0.245 262.881);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-700: oklch(0.488 0.243 264.376);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-800: oklch(0.424 0.199 265.638);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-900: oklch(0.379 0.146 265.522);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-950: oklch(0.282 0.091 267.935);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
-    --hb-secondary-500-rgb: 128 128 128; 
+    
+    --hb-secondary-50-rgb: 242 251 252;
+    --color-secondary-50: rgb(var(--hb-secondary-50-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-100-rgb: 230 247 250;
+    --color-secondary-100: rgb(var(--hb-secondary-100-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-200-rgb: 205 240 246;
+    --color-secondary-200: rgb(var(--hb-secondary-200-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-300-rgb: 180 233 242;
+    --color-secondary-300: rgb(var(--hb-secondary-300-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-400-rgb: 155 225 237;
+    --color-secondary-400: rgb(var(--hb-secondary-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-secondary-600-rgb: 5 163 190;
+    --color-secondary-600: rgb(var(--hb-secondary-600-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-700-rgb: 4 145 169;
+    --color-secondary-700: rgb(var(--hb-secondary-700-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-800-rgb: 3 118 137;
+    --color-secondary-800: rgb(var(--hb-secondary-800-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-900-rgb: 3 91 106;
+    --color-secondary-900: rgb(var(--hb-secondary-900-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-950-rgb: 1 54 63;
+    --color-secondary-950: rgb(var(--hb-secondary-950-rgb));
+  
+
+
+
+
+
+  
   
 
 
@@ -670,16 +396,112 @@
 
 
 
---color-background: #ffffff;
---color-foreground: #111827;
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  --hb-gray-500-rgb: 112 26 117;
+  --color-gray-500: rgb(var(--hb-gray-500-rgb));
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-gray-50-rgb: 247 243 248;
+    --color-gray-50: rgb(var(--hb-gray-50-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-100-rgb: 240 232 241;
+    --color-gray-100: rgb(var(--hb-gray-100-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-200-rgb: 226 209 227;
+    --color-gray-200: rgb(var(--hb-gray-200-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-300-rgb: 212 186 213;
+    --color-gray-300: rgb(var(--hb-gray-300-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-400-rgb: 197 163 199;
+    --color-gray-400: rgb(var(--hb-gray-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-gray-600-rgb: 100 23 105;
+    --color-gray-600: rgb(var(--hb-gray-600-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-700-rgb: 89 20 93;
+    --color-gray-700: rgb(var(--hb-gray-700-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-800-rgb: 72 16 76;
+    --color-gray-800: rgb(var(--hb-gray-800-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-900-rgb: 56 13 58;
+    --color-gray-900: rgb(var(--hb-gray-900-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-950-rgb: 33 7 35;
+    --color-gray-950: rgb(var(--hb-gray-950-rgb));
+  
 
 
---color-header-bg: #f1f5f9;
---color-header-fg: #0f172a;
 
 
---color-footer-bg: #f3f4f6;
---color-footer-fg: #0f172a;
+
+
+--color-background: #fff0f5;
+--color-foreground: #2e1065;
+
+
+--color-header-bg: #fae8ff;
+--color-header-fg: #86198f;
+
+
+--color-footer-bg: #f0abfc;
+--color-footer-fg: #2e1065;
 
     
   }
@@ -705,233 +527,93 @@
   
   
   
+    
+    
+    
+  
+
+  
+  --hb-primary-500-rgb: 231 121 193;
+  --color-primary-500: rgb(var(--hb-primary-500-rgb));
+
+  
+  
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-100: oklch(0.932 0.032 255.585);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-200: oklch(0.882 0.059 254.128);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-300: oklch(0.809 0.105 251.813);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-400: oklch(0.707 0.165 254.624);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-50: oklch(0.97 0.014 254.604);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-500: oklch(0.623 0.214 259.815);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-600: oklch(0.546 0.245 262.881);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-700: oklch(0.488 0.243 264.376);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-800: oklch(0.424 0.199 265.638);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-900: oklch(0.379 0.146 265.522);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-primary-950: oklch(0.282 0.091 267.935);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
-    --hb-primary-500-rgb: 128 128 128; 
+    
+    --hb-primary-50-rgb: 253 248 251;
+    --color-primary-50: rgb(var(--hb-primary-50-rgb));
   
+    
+    
+    
+    
+    --hb-primary-100-rgb: 252 241 248;
+    --color-primary-100: rgb(var(--hb-primary-100-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-200-rgb: 250 228 242;
+    --color-primary-200: rgb(var(--hb-primary-200-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-300-rgb: 247 214 236;
+    --color-primary-300: rgb(var(--hb-primary-300-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-400-rgb: 245 201 230;
+    --color-primary-400: rgb(var(--hb-primary-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-primary-600-rgb: 207 108 173;
+    --color-primary-600: rgb(var(--hb-primary-600-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-700-rgb: 184 96 154;
+    --color-primary-700: rgb(var(--hb-primary-700-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-800-rgb: 150 78 125;
+    --color-primary-800: rgb(var(--hb-primary-800-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-900-rgb: 115 60 96;
+    --color-primary-900: rgb(var(--hb-primary-900-rgb));
+  
+    
+    
+    
+    
+    --hb-primary-950-rgb: 69 36 57;
+    --color-primary-950: rgb(var(--hb-primary-950-rgb));
+  
+
 
 
 
@@ -945,232 +627,98 @@
   
   
   
+    
+    
+    
+  
+
+  
+  --hb-secondary-500-rgb: 88 199 243;
+  --color-secondary-500: rgb(var(--hb-secondary-500-rgb));
+
+  
+  
   
     
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-100: oklch(0.953 0.051 180.801);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-200: oklch(0.91 0.096 180.426);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-300: oklch(0.855 0.138 181.071);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-400: oklch(0.777 0.152 181.912);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-50: oklch(0.984 0.014 180.72);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-500: oklch(0.704 0.14 182.503);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-600: oklch(0.6 0.118 184.704);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-700: oklch(0.511 0.096 186.391);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-800: oklch(0.437 0.078 188.216);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-900: oklch(0.386 0.063 188.416);
-    
-      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
-         or we output the raw color value directly if theme.css supports it.
-         
-         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
-         However, Tailwind 4 supports OKLCH natively. 
-         
-         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
-         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
-         
-         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
-         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
-         
-         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
-         OR we redefine the higher-level variables.
-         
-         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
-         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
-      */
-      --color-secondary-950: oklch(0.277 0.046 192.524);
     
     
-    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
-       in case something accesses the raw -rgb var directly, though unlikely */
-    --hb-secondary-500-rgb: 128 128 128; 
+    
+    --hb-secondary-50-rgb: 246 252 254;
+    --color-secondary-50: rgb(var(--hb-secondary-50-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-100-rgb: 238 249 253;
+    --color-secondary-100: rgb(var(--hb-secondary-100-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-200-rgb: 221 243 252;
+    --color-secondary-200: rgb(var(--hb-secondary-200-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-300-rgb: 204 238 251;
+    --color-secondary-300: rgb(var(--hb-secondary-300-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-400-rgb: 188 232 250;
+    --color-secondary-400: rgb(var(--hb-secondary-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-secondary-600-rgb: 79 179 218;
+    --color-secondary-600: rgb(var(--hb-secondary-600-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-700-rgb: 70 159 194;
+    --color-secondary-700: rgb(var(--hb-secondary-700-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-800-rgb: 57 129 157;
+    --color-secondary-800: rgb(var(--hb-secondary-800-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-900-rgb: 44 99 121;
+    --color-secondary-900: rgb(var(--hb-secondary-900-rgb));
+  
+    
+    
+    
+    
+    --hb-secondary-950-rgb: 26 59 72;
+    --color-secondary-950: rgb(var(--hb-secondary-950-rgb));
+  
+
+
+
+
+
+  
   
 
 
@@ -1178,16 +726,112 @@
 
 
 
---color-background: #0f172a;
---color-foreground: #f8fafc;
+
+  
+  
+  
+    
+    
+    
+  
+
+  
+  --hb-gray-500-rgb: 42 46 55;
+  --color-gray-500: rgb(var(--hb-gray-500-rgb));
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-gray-50-rgb: 244 244 245;
+    --color-gray-50: rgb(var(--hb-gray-50-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-100-rgb: 233 234 235;
+    --color-gray-100: rgb(var(--hb-gray-100-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-200-rgb: 212 213 215;
+    --color-gray-200: rgb(var(--hb-gray-200-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-300-rgb: 191 192 195;
+    --color-gray-300: rgb(var(--hb-gray-300-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-400-rgb: 169 171 175;
+    --color-gray-400: rgb(var(--hb-gray-400-rgb));
+  
+
+  
+  
+  
+    
+    
+    
+    
+    --hb-gray-600-rgb: 37 41 49;
+    --color-gray-600: rgb(var(--hb-gray-600-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-700-rgb: 33 36 44;
+    --color-gray-700: rgb(var(--hb-gray-700-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-800-rgb: 27 29 35;
+    --color-gray-800: rgb(var(--hb-gray-800-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-900-rgb: 21 23 27;
+    --color-gray-900: rgb(var(--hb-gray-900-rgb));
+  
+    
+    
+    
+    
+    --hb-gray-950-rgb: 12 13 16;
+    --color-gray-950: rgb(var(--hb-gray-950-rgb));
+  
 
 
---color-header-bg: #0f172a;
---color-header-fg: #f8fafc;
 
 
---color-footer-bg: #111827;
---color-footer-fg: #e5e7eb;
+
+
+--color-background: #1a103d;
+--color-foreground: #f9f7fd;
+
+
+--color-header-bg: rgba(26, 16, 61, 0.9);
+--color-header-fg: #f9f7fd;
+
+
+--color-footer-bg: #110a28;
+--color-footer-fg: #b8b2cc;
 
     
   }
@@ -9279,9 +8923,9 @@
   ],
   
   
-  "startDate": "2026-06-01T00:00:00Z",
+  "startDate": "2026-06-01T14:00:00Z",
   
-  "endDate": "2026-06-03T00:00:00Z",
+  "endDate": "2026-06-03T14:00:00Z",
   
   
   "performer": {
@@ -9442,9 +9086,111 @@
       
       
     
+      
+      
+      
+    
     
   
 
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+        
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+      
+    
   
     
     
@@ -9489,49 +9235,9 @@
       
       
     
-      
-      
-      
-    
     
   
 
-  
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-        
-        
-        
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-      
-    
   
     
     
@@ -9551,45 +9257,6 @@
           
           
         
-      
-      
-      
-      
-      
-      
-      
-    
-  
-  
-  
-
-  
-  
-
-  
-
-  
-  
-    
-    
-      
-      
-      
-    
-    
-  
-
-  
-    
-    
-      
-      
-      
-      
-      
-      
-      
-      
       
       
       
@@ -9757,8 +9424,8 @@
         <a
           class="nav-link "
           
-          href="/contact"
-        >Contact</a
+          href="/community"
+        >Communauté</a
         >
       </li>
       
@@ -9954,34 +9621,6 @@
     <ul class="flex flex-col gap-1 lg:hidden">
       
       
-        <li class=""><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/contact/"
-    
-  >Contact
-    </a></li>
-        <li class=""><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/about/"
-    
-  >A propos
-    </a></li>
-        <li class=""><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/bibliographie/"
-    
-  >Bibliographie
-    </a></li>
-        <li class=""><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/cartographie/"
-    
-  >Cartographie
-    </a></li>
         <li class="open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
@@ -9995,7 +9634,7 @@
         <ul class="hb-sidebar-list"><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/events/e1-boundaries/"
+    href="/events/e1-webinar-petrova/"
     
   > IN/data : INdex à l’INverse de l’INformatique ?
     </a>
@@ -10027,6 +9666,34 @@
               
             </li></ul>
       </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/about/"
+    
+  >A propos
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/bibliographie/"
+    
+  >Bibliographie
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/cartographie/"
+    
+  >Cartographie
+    </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/community/"
+    
+  >Communauté
+    </a></li>
         <li class=""><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
@@ -10184,7 +9851,7 @@
         
           <div class="font-bold text-2xl">Date</div>
           <div>
-            Jun 1, 2026 12:00 AM &mdash; Jun 3, 2026 12:00 AM
+            Jun 1, 2026 2:00 PM &mdash; Jun 3, 2026 2:00 PM
           </div>
         
 

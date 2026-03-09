@@ -9,8 +9,8 @@ location: "Avignon"
 abstract: ""
 
 # Talk start and end times (ISO 8601)
-event_start: '2026-06-01'
-event_end:   '2026-06-03'
+event_start: '2026-06-01T14:00:00Z'
+event_end:   '2026-06-03T14:00:00Z'
 event_all_day: false
 
 authors: []

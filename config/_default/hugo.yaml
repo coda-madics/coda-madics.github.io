@@ -51,6 +51,7 @@ removePathAccents: true
 
 build:
   writeStats: true
+  # future: true
 enableGitInfo: false
 summaryLength: 30
 pagination:
