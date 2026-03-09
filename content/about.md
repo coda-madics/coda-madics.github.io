@@ -7,8 +7,6 @@ type: page
 
 ---
 
-## Contexte
-
 Les données, l’intelligence artificielle et les infrastructures numériques transforment profondément la recherche scientifique, la création artistique et les sociétés contemporaines. Les algorithmes ne sont plus seulement des outils techniques : ils participent aujourd’hui à la production de connaissances, à la création culturelle et aux formes d’innovation.
 
 Cependant, cette transformation soulève des questions majeures :
