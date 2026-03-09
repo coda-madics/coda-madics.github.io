@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events | </title>
+    <link>http://localhost:1313/event/</link>
+      <atom:link href="http://localhost:1313/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Events</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 Mar 2025 14:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/logo.svg</url>
+      <title>Events</title>
+      <link>http://localhost:1313/event/</link>
+    </image>
+    
+    <item>
+      <title>Examine the boundary between tool and artwork, designer and interpreter</title>
+      <link>http://localhost:1313/event/e1/</link>
+      <pubDate>Mon, 10 Mar 2025 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/event/e1/</guid>
+      <description>&lt;h2 id=&#34;programme&#34;&gt;Programme&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;12:00 - 12:05&lt;/td&gt;
+          &lt;td&gt;Introduction du CODA (5 minutes)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;12:05 - 12:35&lt;/td&gt;
+          &lt;td&gt;Intervention, Lyliana Petrova, ETIS&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;12:35 - 13:15&lt;/td&gt;
+          &lt;td&gt;Q&amp;amp;A discussion&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

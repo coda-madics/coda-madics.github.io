@@ -14,16 +14,16 @@ baseURL: 'https://example.com/' # Website URL
 cascade:
   # Blog post options
   - _target:
-      path: /blog/**
+      path: /events/**
       kind: page
-    pager: true
+    pager: false
     editable: true
-    hide_date: false
-    show_date_updated: true
-    reading_time: true
-    commentable: true
-    show_related: true
-    share: true
+    hide_date: true
+    show_date_updated: false
+    reading_time: false
+    commentable: false
+    show_related: false
+    share: false
     # Just use Breadcrumb for navigation on blog post pages?
     show_breadcrumb: false
     header:

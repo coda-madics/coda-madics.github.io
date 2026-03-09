@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>None | </title>
+    <link>http://localhost:1313/authors/none/</link>
+      <atom:link href="http://localhost:1313/authors/none/index.xml" rel="self" type="application/rss+xml" />
+    <description>None</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language>
+    <item>
+      <title>1ère demi-journée d’études</title>
+      <link>http://localhost:1313/events/e3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/events/e3/</guid>
+      <description>&lt;h2 id=&#34;programme&#34;&gt;Programme&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Intervention en présentiel (20/30 mins + discussion)&lt;/li&gt;
+&lt;li&gt;Intervention en ligne (20 mins + discussion)&lt;/li&gt;
+&lt;li&gt;Workshop: Annotating sensitive data; co-creation scenarios
+&lt;ul&gt;
+&lt;li&gt;Activité créative et de co-construction d’une cartographie fondée sur des recherches convergentes sur l’art, la science et l’IA.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Résultat: Cartographie des ensembles de données tenant compte de l&amp;rsquo;altérité, boîtes à outils pour une conception inclusive&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,18 +13,28 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "CODA MADICS"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
-    type: person                        # person | organization | local_business
+    type: organization                        # person | organization | local_business
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website."
+    description: ""
     # Social accounts (used for meta tags like Twitter Cards)
     social:
-      twitter: "LoreLabs_"              # Twitter/X handle for Twitter Cards (without @)
+      # twitter: "MakeOwnable"              # Twitter/X handle for Twitter Cards (without @)
+      # Site-wide social links (rendered in footer, etc.)
+      # links:
+      #   - icon: brands/x
+      #     url: https://x.com/MakeOwnable
+      #   - icon: brands/github
+      #     url: https://github.com/HugoBlox/kit
+      #   - icon: brands/discord
+      #     url: https://discord.gg/z8wNYzb
+      #   - icon: brands/linkedin
+      #     url: https://linkedin.com/company/example
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -83,16 +93,22 @@ hugoblox:
   header:
     enable: true
     # Header style variant
-    style: navbar                       # navbar | navbar-simple | minimal
+    block: navbar                       # navbar | navbar-simple
     # Stick to top on scroll
     sticky: true
+    # Show logo in navbar
+    show_logo: false
+    # Show site title text in navbar
+    show_title: true
+    # Override navbar title (defaults to identity.name)
+    title: ""
     # Menu alignment
     align: center                       # left | center | right
     # Feature toggles
-    search: true
+    search: false
     theme_toggle: true
-    theme_picker: false
-    language_switcher: true
+    theme_picker: true
+    language_switcher: false
     # Call-to-action button
     cta:
       enable: false
@@ -103,25 +119,32 @@ hugoblox:
   # FOOTER
   # Site footer
   # ────────────────────────────────────────────────────────────────────────────
-  footer:
-    # Footer style variant
-    style: minimal                      # minimal | columns | centered
-    language_switcher: true
-    # Custom footer text (HTML supported)
-    text: ""
+  # footer:
+  #   # Footer style variant
+  #   style: columns                      # minimal | columns | centered
+  #   show_logo: true
+  #   show_title: true
+  #   show_tagline: true
+  #   # Override footer title (defaults to identity.name)
+  #   title: ""
+  #   language_switcher: true
+  #   # Show social icons from identity.social.links
+  #   show_social: true
+  #   # Custom footer text (HTML supported)
+  #   text: ""
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
   # Legal notices and licensing
   # ────────────────────────────────────────────────────────────────────────────
-  copyright:
-    # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
-    license:
-      type: cc                          # cc | custom
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+  # copyright:
+  #   # Copyright notice - supports {year}, {name}, {license} placeholders
+  #   notice: "© {year} {name}."
+  #   license:
+  #     type: custom                          # cc | custom
+  #     allow_derivatives: false
+  #     share_alike: true
+  #     allow_commercial: false
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO
@@ -163,7 +186,7 @@ hugoblox:
       enable: true
     # Reading time estimates
     reading_time:
-      enable: true
+      enable: false
     # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
@@ -289,3 +312,4 @@ hugoblox:
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
     affiliate_code: ""
+

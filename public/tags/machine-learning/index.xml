@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning | </title>
+    <link>http://localhost:1313/tags/machine-learning/</link>
+      <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine Learning</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 10 Dec 2024 14:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/logo.svg</url>
+      <title>Machine Learning</title>
+      <link>http://localhost:1313/tags/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>My Conference Talk</title>
+      <link>http://localhost:1313/event/my-talk/</link>
+      <pubDate>Tue, 10 Dec 2024 14:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/event/my-talk/</guid>
+      <description>&lt;h2 id=&#34;talk-details&#34;&gt;Talk Details&lt;/h2&gt;
+&lt;h2 id=&#34;include-references-acknowledgments-or-related-work&#34;&gt;Add any additional context, extended abstract, or notes about the talk.
+Include references, acknowledgments, or related work.&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
