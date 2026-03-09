@@ -59,5 +59,5 @@ sections:
       spacing:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["0rem", 0, 0, 0]
-        
+
 ---
