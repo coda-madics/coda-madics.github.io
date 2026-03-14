@@ -1,5 +1,6 @@
 ---
 title: "Decoding Data Care: Feminist, Decolonial, and Artistic Perspectives on Responsible Data Practices"
+date: 2023-01-01
 
 # Summary for listing cards
 summary: ""
@@ -32,7 +33,7 @@ image:
 # Featured
 featured: false
 
-draft: false
+draft: true
 reading_time: false
 share: false
 profile: false

@@ -1,5 +1,6 @@
 ---
 title: "1ère demi-journée d’études"
+date: 2023-01-01
 
 # Summary for listing cards
 summary: "Symposium MADICS"

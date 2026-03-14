@@ -1,6 +1,6 @@
 ---
 title: " IN/data : INdex à l’INverse de l’INformatique ?"
-date: 2026-03-16
+date: 2023-01-01
 
 
 # Summary for listing cards
