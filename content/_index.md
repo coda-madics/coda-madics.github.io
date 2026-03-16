@@ -60,4 +60,46 @@ sections:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
         padding: ["0rem", 0, 0, 0]
 
+  - block: people
+    id: organizers
+    content:
+      title: Communauté
+      text: "Porteur·euses"
+      user_groups: ['Organizers']
+    design:
+      show_role: true
+      show_social: false
+      show_interests: false
+
+  # - block: collection
+  #   content:
+  #     title: 'Événements Récents'
+  #     count: 1
+  #     sort_by: Params.event_start
+  #     sort_ascending: false
+  #     filters:
+  #       folders:
+  #         - events        
+  #   design:
+  #     view: card # card, article-grid
+
+  - block: cta-card
+    id: contact
+    content:
+      title: "Contactez-nous"
+      text: "Vous avez une question ?"
+      button:
+        text: "Send Email"
+        url: "mailto:coda-madics-pi@groupes.renater.fr"
+    design:
+      card:
+        # Card background color (CSS class)
+        # css_class: 'bg-primary-900 dark:bg-primary-900'
+        css_style: ''    
+      background:
+        # color: "blue-600"
+        text_color_light: true
+      spacing:
+        padding: ["6", "6", "6", "6"]
+
 ---

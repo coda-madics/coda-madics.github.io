@@ -3,8 +3,8 @@ slug: me
 is_owner: true
 name:
   display: CODA
-  given: 
-  family: 
+  given: Atelier
+  family: MADICS
   pronouns: Computing + Data + Art
 role: 
 bio: "Atelier du GDR MADICS"
@@ -27,3 +27,5 @@ links:
   - icon: rss
     url: ./events/index.xml
     label: Subscribe to my blog via RSS feed
+
+website: https://www.madics.fr/

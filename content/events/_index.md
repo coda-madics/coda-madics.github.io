@@ -4,18 +4,18 @@ type: landing
 
 sections:
 
-  - block: collection
-    content:
-      title: Focus
-      count: 0
-      sort_by: Params.event_start
-      sort_ascending: false
-      filters:
-        folders:
-          - events   
-        featured_only: true     
-    design:
-      view: card # card, article-grid
+  # - block: collection
+  #   content:
+  #     title: Focus
+  #     count: 0
+  #     sort_by: Params.event_start
+  #     sort_ascending: false
+  #     filters:
+  #       folders:
+  #         - events   
+  #       featured_only: true     
+  #   design:
+  #     view: card # card, article-grid
 
   - block: collection
     content:

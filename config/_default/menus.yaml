@@ -16,29 +16,28 @@ main:
     url: /events
     weight: 20
 
+
   - name: Communauté
-    url: /community
-    weight: 30    
+    url: /#organizers
+    weight: 70  
+
+  - name: Contact
+    url: /#contact
+    weight: 80    
 
   - name: Ressources
-    weight: 40
+    weight: 90
     hasChildren: true
-
 
   - parent: "Ressources"
     name: Questions de Recherche
     url: /questions
-    weight: 50    
+    weight: 91    
 
   - parent: "Ressources"
     name: Cartographie
     url: /cartographie
-    weight: 60    
-
-  - parent: "Ressources"
-    name: Bibliographie
-    url: /bibliographie
-    weight: 70    
+    weight: 92    
 
 
 

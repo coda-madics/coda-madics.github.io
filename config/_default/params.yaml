@@ -97,7 +97,7 @@ hugoblox:
     # Stick to top on scroll
     sticky: true
     # Show logo in navbar
-    show_logo: false
+    show_logo: true
     # Show site title text in navbar
     show_title: true
     # Override navbar title (defaults to identity.name)
@@ -107,7 +107,7 @@ hugoblox:
     # Feature toggles
     search: false
     theme_toggle: true
-    theme_picker: true
+    theme_picker: false
     language_switcher: false
     # Call-to-action button
     cta:
@@ -307,7 +307,7 @@ hugoblox:
     # Requires: HugoBlox Premium to support HugoBlox via alternative means
     # Note: Even with Premium, you can keep this false to support open source!
     # Get Premium: https://hugoblox.com/premium
-    hide_attribution: false
+    hide_attribution: true
     
     # Affiliate referral code for rewards program
     # Join affiliate program: https://hugoblox.com/affiliates
