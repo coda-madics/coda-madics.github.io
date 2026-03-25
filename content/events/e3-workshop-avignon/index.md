@@ -65,10 +65,11 @@ profile: false
     <tr>
       <td>14:50 - 15:20</td>
       <td>
-        Keynote en ligne
+        Keynote en ligne 
         <ul>
-          <li> <a href="#alexandre-gefen">Alexander Grefen</a> </br>
-          Sorbonne Nouvelle / THALIM, CNRS 
+          <li> <a href="#alexandre-gefen">Que change l’IA à la création ?</a> </br>
+               Alexander Grefen <br> 
+               Sorbonne Nouvelle / THALIM, CNRS 
           </li>
         </ul>        
       </td>
@@ -97,19 +98,19 @@ profile: false
 </table>
 
 
-## Biographies
+## Keynotes
 
 <img id="alexandre-gefen" src="gefen.jpeg" width="300" class="rounded-lg " />
 
 ### Alexandre Gefen
 
-[Alexandre Gefen](https://www.fabula.org/annuaire/2-alexandre-gefen/) est directeur de recherche CNRS au sein de l’unité Théorie et histoire des arts et des littératures de la modernité (UMR7172, THALIM, CNRS / Université Sorbonne Nouvelle – Paris 3) et historien des idées et de la littérature. Il est l’auteur de nombreux articles et essais portant notamment sur la culture, la littérature contemporaine et la théorie littéraire. Dernières parutions : avec Sandra Laugier, *Le Pouvoir des liens faibles*, CNRS éditions, 2002. *Territoires de la non-fiction*, Brill, 2020. Avec Olivier Bessard-Banquy et Sylvie Ducas, *Best-sellers. L’industrie du succès*, Armand Colin, 2021. *L’idée de littérature. De l’art pour l’art aux écritures d’intervention*, Corti, 2021.
+<h3 ><i>Que change l’IA à la création ?</i></h3>
 
-Fondateur de [Fabula.org](https://www.fabula.org), il a été l’un des pionniers des Humanités Numériques en France. Il a découvert les usages de l’IA pour la recherche (vecteurs de mots, topic modelling) au Literary Lab de Stanford dans le cadre du projet « Pour une histoire empirique de la littérature », *Transatlantic program for collaborative work in the field of digital humanities*, dont il a été co-porteur avec Franco Moretti (FMSH Paris – Fondation Mellon).
+Moins qu'une révolution, l'IA est un révélateur : elle force la philosophie et l'esthétique à reprendre à nouveaux frais de très anciennes questions sur la création, la valeur et la représentation. L'IA générative  radicalise des questions que l'art moderne posait depuis Duchamp : elle dissocie l'intention de l'exécution, faisant du prompt le nouveau geste créateur. En déléguant la réalisation à la machine, elle rejoue la « mort de l'auteur » théorisée par Barthes, tout en révélant que l'originalité n'est peut-être qu'un paramètre réglable. Elle substitue à la représentation humaine du monde une « vérité statistique » qui n'est ni regard ni mensonge, déstabilisant les notions de mimésis, d'aura et de droit d'auteur. Ce faisant, elle poursuit et intensifie le mouvement moderne de dé-définition de l'art — désessentialisé, désacralisé, déconnecté de tout medium natif. 
 
-Par ailleurs, Directeur Adjoint Scientifique de l’Institut des Sciences Humaines et Sociales du CNRS depuis 2017, il a en charge les priorités « Humanités Numériques » et « Intelligence Artificielle ». Il a notamment représenté les SHS dans le Forum mondial sur l’IA pour l’humanité organisé en 2019 et a coordonné avec Jérôme Lang l’appel à financement de la MITI du CNRS « Enjeux scientifiques et sociaux de l’intelligence artificielle » (2020).
+<h3>Bio</h3>
 
-Après un programme de recherche consacré aux fictions de l’Intelligence Artificielle ([ia-fictions.net](https://ia-fictions.net)), il est porteur principal (PI) du projet ANR « CulturIA », pour une histoire culturelle de l’IA.
+[Alexandre Gefen](https://www.fabula.org/annuaire/2-alexandre-gefen/), Directeur de Recherche CNRS au sein de l’unité Théorie et histoire des arts et des littératures de la modernité (UMR7172, THALIM, CNRS / Université sorbonne Nouvelle – Paris 3), est historien des idées et de la littérature.  Auteur de nombreux livres et articles portant notamment sur la culture, la littérature contemporaine et la théorie littéraire. Fondateur de [Fabula.org](https://www.fabula.org), il a été l’un des pionniers des Humanités Numériques en France. Travaillant à l’adoption des outils de l’Intelligence artificielle pour la recherche dans les sciences humaines et sociales comme à son examen critique, il a porté plusieurs programmes de recherche consacrés à l’IA en art et en littérature et a été commissaire de deux expositions sur l’IA. Dernières publications : avec Guillemette Crozet, La littérature. Une infographie, CNRS Editions, 2022. Créativités artificielles, Les Presses du réel, 2023. Vivre avec ChatGPT, L'Observatoire, 2023. Humanités numériques : le savoir et l’enseignement à l’heure de l’IA, Herman, 2026 (à paraitre). L’Intelligence artificielle : une histoire, CNRS Editions, 2026 (à paraitre).
 
 
 ---- 
@@ -117,6 +118,8 @@ Après un programme de recherche consacré aux fictions de l’Intelligence Arti
 <img id="fanny-georges" src="georges.jpg" width="300" class="rounded-lg " />
 
 ### Fanny Georges 
+
+<h3>Bio</h3>
 
 [Fanny Georges](https://fannygeorges.wordpress.com/2023/12/27/fanny-georges/) est maître de conférences habilitée à diriger des recherches en sciences de l’Information et de la communication (SIC) à la Sorbonne Nouvelle, Institut de la Communication et des médias/UFR Arts & Médias, IRMECCEN (EA1484). Elle travaille sur les mythes sociotechnologiques de l’existence (identité numérique, mort numérique, immortalité numérique) dans une approche sociologique et sémiologique des traces numériques.
 

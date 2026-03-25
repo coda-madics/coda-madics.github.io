@@ -102,4 +102,23 @@ sections:
       spacing:
         padding: ["6", "6", "6", "6"]
 
+
+  # # Contact Section
+  # - block: contact-info
+  #   id: contact
+  #   content:
+  #     title: Contactez-nous
+  #     subtitle: ""
+  #     text: 'Vous avez une question ?'
+  #     email: coda-madics-pi@groupes.renater.fr
+  #     autolink: false
+  #   design:
+  #     columns: '1'
+  #     background:
+  #       color:
+  #         light: "#ffffff"
+  #         dark: "#0d0d12"
+  #     spacing:
+  #       padding: ["4rem", "0", "4rem", "0"]        
+
 ---
