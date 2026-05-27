@@ -79,8 +79,9 @@ profile: false
       <td>
         Keynote présentiel
         <ul>
-          <li><a href="#fanny-georges">Fanny Georges</a> </br>
-          Sorbonne Nouvelle / IRMECCEN
+          <li><a href="#saint-germier">La musique générée par IA est-elle de la musique ?</a> </br>
+          Pierre Saint-Germier <br>
+          CNRS / IRCAM
           </li>
         </ul>        
       </td>
@@ -115,17 +116,10 @@ Moins qu'une révolution, l'IA est un révélateur : elle force la philosophie e
 
 ---- 
 
-<img id="fanny-georges" src="georges.jpg" width="300" class="rounded-lg " />
+<img id="saint-germier" src="saint-germier.jpeg" width="300" class="rounded-lg " />
 
-### Fanny Georges 
+### Pierre Saint-Germier
 
 <h3>Bio</h3>
 
-[Fanny Georges](https://fannygeorges.wordpress.com/2023/12/27/fanny-georges/) est maître de conférences habilitée à diriger des recherches en sciences de l’Information et de la communication (SIC) à la Sorbonne Nouvelle, Institut de la Communication et des médias/UFR Arts & Médias, IRMECCEN (EA1484). Elle travaille sur les mythes sociotechnologiques de l’existence (identité numérique, mort numérique, immortalité numérique) dans une approche sociologique et sémiologique des traces numériques.
-
-A l’UFR Arts & Médias/Institut de la Communication et des Médias de la Sorbonne Nouvelle. Elle a principalement travaillé sur la création de soi, l’identité et la relation à l’au-delà.
-
-Elle s’intéresse aux aspects éthiques de l’activité d’enquête en sciences sociales. Depuis 2019, elle est vice-présidente du Comité d’Ethique de la Recherche de l’Université Sorbonne Nouvelle et membre du GER GENIC (Groupe sur l’Éthique et le Numérique en Information-Communication) de la Société Française des Sciences de l’Information et de la Communication.
-
-Elle a soutenu mon Habilitation à Diriger des recherches le 13 février 2023 sur la construction sociale des mythes sociotechnologiques, considérant en particulier la responsabilité énonciative de la recherche en sciences humaines et sociales (et des SIC) dans la légitimation de ces mythes arrimés aux idéologies de l’innovation dans la culture scientifique.
-
+[Pierre Saint-Germier](https://www.ins2i.cnrs.fr/fr/cnrsinfo/pierre-saint-germier-et-la-philosophie-de-la-musique) est chargé de recherches au CNRS en philosophie, affecté à l'unité Sciences et Technologies de la Musique et du Son de l'[IRCAM](https://www.ircam.fr/). Ayant une double spécialisation d’un côté en logique et épistémologie, et de l’autre en philosophie de la musique, il a mené des recherches sur les expériences de pensée, la logique de l'imagination, et l’improvisation musicale. Il a coordonné l'ouvrage _Language, Evolution, and Mind_ (College Publications, 2018) et co-édité et co-traduit avec Clément Canonne deux volumes d'écrits sur la musique du philosophe états-unien Jerrold Levinson (_Essais de Philosophie de la Musique_, Vrin, 2015; _L'expérience musicale_, Vrin, 2020). Son programme de recherche actuel porte sur la philosophie du son et de la musique à l’ère de sa reproductibilité numérique. Il s’agit d’utiliser la musique et le son comme un prisme à l’aune duquel étudier les conséquences de la révolution numérique et de l’intelligence artificielle sur notre condition contemporaine. Parallèlement à ses recherches, il s'entoure volontiers de claviers de piano et de synthétiseurs. Il a participé au programme d'été de la School for Improvisational Music à New York (2017).
