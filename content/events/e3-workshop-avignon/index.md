@@ -68,7 +68,7 @@ profile: false
         Keynote en ligne 
         <ul>
           <li> <a href="#alexandre-gefen">Que change l’IA à la création ?</a> </br>
-               Alexander Grefen <br> 
+               Alexander Gefen <br> 
                Sorbonne Nouvelle / THALIM, CNRS 
           </li>
         </ul>        
