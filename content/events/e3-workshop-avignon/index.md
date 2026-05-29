@@ -57,7 +57,7 @@ profile: false
         Présentation de l'Atelier CODA - annonce Chronotopies
         <ul>
           <li>Baptiste Caramiaux, ISIR</li>
-          <li>Frédérique Bevilacqua, IRCAM, STMS</li>
+          <li>Frédéric Bevilacqua, IRCAM, STMS</li>
           <li>Genoveva Vargas-Solar, LIRIS</li>
         </ul>
       </td>
