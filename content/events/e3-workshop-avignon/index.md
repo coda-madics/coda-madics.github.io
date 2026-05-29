@@ -56,7 +56,6 @@ profile: false
       <td>
         Présentation de l'Atelier CODA - annonce Chronotopies
         <ul>
-          <li>Baptiste Caramiaux, ISIR</li>
           <li>Frédéric Bevilacqua, IRCAM, STMS</li>
           <li>Genoveva Vargas-Solar, LIRIS</li>
         </ul>
@@ -89,10 +88,11 @@ profile: false
     <tr>
       <td>15:50 - 16:45</td>
       <td>
-        Activité collective
+        Activité collective animée par: 
         <ul>
-          <li>Animation: Baptiste Caramiaux, ISIR</li>
-        </ul>        
+          <li>Frédéric Bevilacqua, IRCAM, STMS</li>
+          <li>Genoveva Vargas-Solar, LIRIS</li>
+        </ul>
       </td>
     </tr>
   </tbody>
