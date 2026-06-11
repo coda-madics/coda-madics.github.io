@@ -15,7 +15,7 @@ abstract: >
   It is important that we be able to move from resistance toward spaces for building alternatives. And before we can create anything, we first need to imagine it. To imagine is a political act. The session points to the process of the historical colonial construction of imaginaries about what shall be considered as technology, evolution, and progress. A process of colonizing technological imaginaries that has unfolded in distinct phases: from European and North American sci-fi magazines, to Hollywood and Silicon Valley. These imaginary-making industries promoted certain visions of what technology is, classifying as backward a range of ancestral technologies—technologies of life that still endure and form the foundation of our practices of collectivity. The session proposes a reclaiming of these ancestral technologies and a moment to make visible our political and situated imaginaries of future-present.
   
 # Talk start and end times (ISO 8601)
-event_start: '2026-06-11T15:00:00Z'
+event_start: '2026-06-12T15:00:00Z'
 event_end: ''
 event_all_day: true
 
